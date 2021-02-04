@@ -25,17 +25,19 @@ function Cart() {
                 })
         }
 
+        // get total of orders 
+        const getTotal = () =>{
+            {carts.map(cart2=>{
+                total  += ((cart2.qty) * (cart2.price)) 
+                setSubTotal(total);
+            })}
+        }
+
         orderDetails();
         getTotal();
     },[carts])
 
-    // get total of orders 
-    const getTotal = () =>{
-        {carts.map(cart2=>{
-            total  += ((cart2.qty) * (cart2.price)) 
-            setSubTotal(total);
-        })}
-    }
+    
 
     // delete specific order
     const delCart = async (id) =>{

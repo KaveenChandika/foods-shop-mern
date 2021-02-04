@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import { useHistory } from 'react-router';
+import React from 'react'
 
 function Logout() {
     return (
