@@ -2,6 +2,7 @@ import { Button } from '@material-ui/core';
 import axios from './axios';
 import React from 'react'
 import "./Card.css";
+import { Link } from 'react-router-dom';
 function Card({src,title,description,price,fid,qty}) {
     const addToCart = (src,title,description,price,fid,qty) =>{
         const cartData ={
@@ -17,7 +18,7 @@ function Card({src,title,description,price,fid,qty}) {
 
     return (
         <div data-aos="flip-right" className="card">
-           <a href=""><img src={src} alt=""/></a>
+           <Link to="/" ><img src={src} alt=""/></Link>
            <div className="card__info">
                 <h2>{title}</h2>
                 <h4>{description}</h4>
