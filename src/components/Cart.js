@@ -25,11 +25,11 @@ function Cart() {
 
         // get total of orders 
         const getTotal = () =>{
-            // var total = 0;
-            // {carts.map(cart2=>{
-            //     total  = total +(cart2.qty* cart2.price) 
-            //     setSubTotal(total);
-            // })}
+            var total = 0;
+            {carts.map(cart2=>{
+                total  = total +(cart2.qty* cart2.price) 
+                setSubTotal(total);
+            })}
         }
 
         orderDetails();
@@ -58,7 +58,7 @@ function Cart() {
     }
 
 
-    if(carts.length != 0){
+    if(carts.length !== 0){
     return (
         <div className="cart">
             <div className="cart__info">
