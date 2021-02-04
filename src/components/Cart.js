@@ -9,9 +9,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import SentimentVeryDissatisfied from '@material-ui/icons/SentimentVeryDissatisfied';
 import axios from './axios';
-import { Button } from '@material-ui/core';
 function Cart() {
-    var total = 0;
     var dec_val = 0;
     var inc_val = 0;
     const [carts,setCart] =useState([]);
@@ -27,8 +25,9 @@ function Cart() {
 
         // get total of orders 
         const getTotal = () =>{
+            var total = 0;
             {carts.map(cart2=>{
-                total  += ((cart2.qty) * (cart2.price)) 
+                total  = total +(cart2.qty* cart2.price) 
                 setSubTotal(total);
             })}
         }
