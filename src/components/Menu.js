@@ -4,9 +4,7 @@ import './Menu.css';
 import axios from './axios';
 function Menu() {
     const [foods,setFoods] =useState([]);
-    const [userid, setUserId] =useState("");
     useEffect(() =>{
-        setUserId(localStorage.getItem('u_id'));
         const getFoods = async () =>{
             axios.get('/api/v1/getFoods')
                 .then((res) =>{
