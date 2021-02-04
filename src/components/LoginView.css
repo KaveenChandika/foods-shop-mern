@@ -1,0 +1,14 @@
+.login__inputs{
+    margin-top: 300px;
+    justify-content: center;
+    display: grid;
+}
+
+.login__inputs >.MuiTextField-root {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.login__inputs > .MuiButton-root{
+    margin-top: 10px;
+}

@@ -1,0 +1,5 @@
+.menu__body{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 50px;
+}

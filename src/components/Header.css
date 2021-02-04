@@ -1,0 +1,33 @@
+.header{
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: purple;
+    height: 10vh;
+}
+
+.header__left{
+    margin:10px
+}
+
+.header__logo >h1{
+    color: white;
+}
+
+.header__routes{
+    margin-right: 10px;
+}
+
+.header__routes >a{
+    margin-right: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.header__routes >a:hover{
+    color: pink;
+}
