@@ -13,7 +13,7 @@ function Cart() {
     var dec_val = 0;
     var inc_val = 0;
     const [carts,setCart] =useState([]);
-    // const [subTotal, setSubTotal] = useState(0);
+    const [subTotal, setSubTotal] = useState(0);
     useEffect(() =>{
         const orderDetails = async () =>{
             axios.get('/api/v1/getCarts')
@@ -25,15 +25,15 @@ function Cart() {
 
         // get total of orders 
         const getTotal = () =>{
-            // var total = 0;
-            // {carts.map(cart2=>{
-            //     total  = total +(cart2.qty* cart2.price) 
-            //     setSubTotal(total);
-            // })}
+            var total = 0;
+            {carts.map(cart2=>{
+                total  = total +(cart2.qty* cart2.price) 
+                setSubTotal(total);
+            })}
         }
 
         orderDetails();
-        // getTotal();
+        getTotal();
     },[carts])
 
     
