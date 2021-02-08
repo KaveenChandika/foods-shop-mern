@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Demo App :- https://foods-shop-mern-git-master.kaveenchandika.vercel.app/
+<b>Demo App :-</b> https://foods-shop-mern-git-master.kaveenchandika.vercel.app/
 <br>
-Login Credentials: Username:user@gmail.com Password:123
+<b>Login Credentials:</b> Username:user@gmail.com Password:123
 ## Available Scripts
 
 In the project directory, you can run:
