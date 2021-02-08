@@ -26,7 +26,7 @@ function Cart() {
         // get total of orders 
         const getTotal = () =>{
             var total = 0;
-            carts.map(cart2=>{
+            carts.forEach((cart2)=>{
                 total  = total + (cart2.qty* cart2.price) 
                 setSubTotal(total);
             })
